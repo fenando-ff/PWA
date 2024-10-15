@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site pwa</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="manifest" href="{% static 'manifest.json' %}">
+    <script src="{% static "js/main.js" %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="{% static "js/splash.js" %}"></script> 
+</head>
+<body>
+    <div id="splash-screen">
+        <img class="splash-img" src="{% static "img/undertale_192.png" %}" alt="logo carregamento">
+        <p class="splash-p">Carregando...</p>
+    </div>
+
+    <div id="conteudo">
+        <h1>PWA TESTE</h1>
+        <br>
+        <h2>Undertale</h2>
+        <p>Jogo muito divertido com uma história muito interessante e com uma interatividade muito divertida com  usuário</p>
+        <div class="imagens">
+                <img class="img-undertale" src="{% static "img/undertale_320.png" %}" alt="undertale image">
+                <img class="img-undertale" src="{% static "img/undertale_320.png" %}" alt="undertale image">
+                <img class="img-undertale" src="{% static "img/undertale_320.png" %}" alt="undertale image">
+                <img class="img-undertale" src="{% static "img/undertale_320.png" %}" alt="undertale image">
+        </div>
+    </div>
+</body>
+</html>
